@@ -1,0 +1,206 @@
+<html>
+<body>
+<header>
+<h3>Lione Messi</h3>
+</header>
+<section>
+    <nav>     
+
+        <p> <b>Lionel Andrés Messidds</b>(Spanish pronunciation: [ljoˈnel anˈdɾes ˈmesi] (listen); born 24 June 1987), also known as <br> Leo Messi</b>, is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team.</p>
+        <button onclick="typeWriter()">More about Messi.</button>
+
+<p id="demo"></p>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm" style="display:none">
+  <form class="form-container">
+    <h1>Chat</h1>
+<input type="text" placeholder="your Name..." id="name"></input><br><br>
+    <label for="msg"><b>Like it or not,and WHY!</b></label>
+    <p>you can add only one answer.</p>
+    <textarea placeholder="Type the annswer.." name="msg" id="msg" required></textarea>
+
+    <button type="button" class="btn" onclick="addDiv()" id="newEntry">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+    </nav>
+
+<article>
+    <h2>Lione Messi</h2>
+    <h5>He won a club-record 34 trophies.</h5>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg/220px-Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg">
+ <div>   <h4>Personal Information</h4>
+    <b>Full name</b> Lionel Andrés Messi<br>
+        <b>Date of birth:</b> 24 June 1987 (age 36)<br>
+      <b>  Place of birth:</b> Rosario, Santa Fe, Argentina<br>
+     <b>   Height: </b>1.70 m (5 ft 7 in)<br>
+        </div>
+        <div>   <h4>Team information</h4>
+        <b>Current team:</b>Inter Miami<br>
+      <b>Number:</b> 10:<br>
+        </div>
+        <div>   <h4>Youth career</h4>
+        <b>1992–1995: </b> Grandoli<br>
+      <b>1995–2000:</b> Newell's Old Boys<br>
+     <b>2000–2003:</b>	Barcelona<br>
+        </div>
+        <div>   <h4>Senior career*</h4>
+    <b>years	Team	Apps	(Gls)<br></b>
+        2003–2004	Barcelona C	10	(5)<br>
+2004–2005	Barcelona B	22	(6)<br>
+2004–2021	Barcelona	520	(474)<br>
+2021–2023	Paris Saint-Germain	58<br>
+2023–	Inter Miami	3	(1)<br>
+        </div><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Firma_de_Lionel_Messi.svg/150px-Firma_de_Lionel_Messi.svg.png">
+        <h2>Messi's Signature</h2>
+        </article>
+
+</section>
+<footer>
+  <h3>About the Creater!
+  </h3>
+  Name: Lovey<br>
+ The age when she made it: 9years<br>
+ <h3>What about you!</h3>
+  <p>first Name:<input></input></p>
+  <form>
+  <p>gender?<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">Male</label>
+<input type="radio" id="CSS" name="fav_language" value="CSS">
+<label for="JS">Female</label></p>
+<p>last Name:<input></input></p>
+</form>
+
+<h3>Others ideas about the qustion!</h3>
+<p id="comment"></p>
+<p>tasha:I love it, the styling is butifull !</p>
+<p>vivaan:I love messi, and it's soo cool !</p>
+<p>pradeep: I love it, it is the best web site for your age!</p>
+<button onclick="myFunction()">click for more ideas!</button>
+
+<p id="vemo"></p>
+
+</footer>
+</body>
+</html></body>
+        <style>*{
+    box-sizing:border-box;
+}
+article{
+    flex: 3;
+  background-color:aquamarine;
+  padding: 10px;
+}
+section {  
+  display: flex;
+}
+nav {  
+  flex: 1;
+  background:aquamarine;
+  padding: 20px;
+}
+footer {
+  background-color:aqua;
+  padding: 10px;
+  text-align: center;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {  
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;  
+  background-color:aqua;
+}
+.open-button {
+  padding: 16px 20px;
+  cursor: pointer;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.chat-popup {
+  bottom: 0;
+  z-index: 9;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+}
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  min-height: 200px;
+}
+.form-container .btn {
+  padding: 16px 20px;
+  width: 100%;
+  margin-bottom:10px;
+}
+.form-container .cancel {
+
+}
+button{
+  background-color: aqua;
+
+}
+h4{
+  background-color: aqua;
+}</style>
+        <script>var i = 0;
+var txt = "Widely regarded as one of the greatest players of all time, Messi has won a record seven Ballon d'Or awards[note 2] and a record six European Golden Shoes, and in 2020 he was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 34 trophies, including ten La Liga titles, seven Copa del Rey titles and the UEFA Champions League four times.[note 3] With his country, he won the 2021 Copa América and the 2022 FIFA World Cup. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function hoverX() {
+  document.getElementById("entries").style.backgroundColor = "aqua";
+result = "<del>"+ document.getElementById("P1").innerHTML + "</del>";
+document.getElementById("P1").innerHTML = result;
+
+}
+
+const parent = document.getElementById("entries");
+
+document.getElementById("newEntry").addEventListener("click", newEntry);
+
+function newEntry() {
+    var text = document.getElementById("textBox").value;
+    var newDiv = document.createElement("div");
+    newDiv.textContent = text;
+    parent.appendChild(newDiv);
+    let result = text.repeat(0);
+}
+
+function addDiv(){
+
+  var name = document.getElementById("name").value;
+  var text = document.getElementById("msg").value;
+
+  document.getElementById("comment").innerHTML=name +": "+ text;
+}
+
+function myFunction() {
+  document.getElementById("vemo").innerHTML = "hia: I amm just gana say OMG    kira:I don't know how to explane it Lovey";
+}</script>
+      </html>
